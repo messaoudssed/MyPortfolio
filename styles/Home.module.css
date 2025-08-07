@@ -1,0 +1,172 @@
+.container {
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 3rem;
+  color: #1a202c;
+}
+
+.title span {
+  color: #3182ce;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #4a5568;
+  margin-top: 1rem;
+}
+
+.profile {
+  flex: 0 0 auto;
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: 4px solid #3182ce;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links Section */
+.linksSection {
+  margin: 3rem 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #3182ce;
+}
+
+.cardContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #3182ce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h2 span {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover h2 span {
+  opacity: 1;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a5568;
+  flex-grow: 1;
+}
+
+/* Intro Section */
+.introSection {
+  margin-top: 4rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,95 @@
+.projectsContainer {
+  padding: 4rem 0;
+}
+
+.projectsContainer h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #2563eb;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+  width:  300px;
+  height: 300px;
+  zoom: 100%;
+  object-fit: cover;
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectContent h3 {
+  margin-bottom: 0.5rem;
+  color: #1e40af;
+}
+
+.projectContent p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #e0e7ff;
+  color: #2563eb;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLinks a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sourceLink {
+  background: #2563eb;
+  color: white;
+}
+
+.sourceLink:hover {
+  background: #1d4ed8;
+}
+
+.demoLink {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.demoLink:hover {
+  background: #e0e7ff;
+}
